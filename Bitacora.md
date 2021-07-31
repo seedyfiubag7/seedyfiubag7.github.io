@@ -4,7 +4,7 @@ La bitácora reúne entradas periódicas detallando el estado del proyecto en la
 
 
 
-[TOC]
+{% capture markdown %}
 
 
 
@@ -367,3 +367,8 @@ Se solucionan errores y se pule la interfaz agregando pantallas de carga, mensaj
 ### Backend
 
 Se mejora la documentacion de todos los microservicios, se completan tests unitarios y se solucionan errores relacionados a las busquedas de proyectos, paginacion, creacion de wallets y deployment en Heroku.
+
+{% endcapture %} {% assign text = markdown | markdownify %}
+
+{% include toc.html html=text ordered=true %}
+{{ text }}
