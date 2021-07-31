@@ -5,6 +5,6 @@ relative_links:
   enabled: true
   collections: true
 include:
-  - Manual_de_Usuario.md.md
-  - Manual_de_Usuario_Backoffice.md.md
+  - Manual_de_Usuario.md
+  - Manual_de_Usuario_Backoffice.md
   - index.md
