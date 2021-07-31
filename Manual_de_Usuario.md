@@ -328,4 +328,4 @@ Cuando se crea un proyecto, el dueño se suscribe automáticamente al proyecto, 
 {% endcapture %} {% assign text = markdown | markdownify %}
 
 {% include toc.html html=text ordered=true %}
-{% text %}
+{% include text %}
