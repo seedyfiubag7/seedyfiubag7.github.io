@@ -1,6 +1,6 @@
 # Bitácora
 
-La bitácora reúne entradas periódicas detallando el estado del proyecto en la fecha de su escritura. Se incluyen notas posteriores, que aclaran confusiones o diferencias de planes, que expliquen las diferencias más amplias con el producto final.
+La bitácora reúne entradas periódicas detallando el estado del proyecto en la fecha de su escritura. Se incluyen notas posteriores, que aclaran confusiones o cambios de planes, que expliquen las diferencias más amplias con el producto final.
 
 
 
@@ -55,11 +55,11 @@ Se trabaja en implementar dichas pantallas y especialmente en integrar el login 
 
 ### Backend
 
-Con lo aprendido en los tutoriales seguidos se comienza por el ya mencionado microservicio de usuarios. Se decide utilizar como stack principal a javascript, node y postgresql. Ademas se decide que se utilizaran los servicios gratuitos de Heroku para el deployment de los microservicios
+Con lo aprendido en los tutoriales seguidos se comienza por el ya mencionado microservicio de usuarios. Se decide utilizar como stack principal a javascript, node y postgresql. Además se decide que se utilizarán los servicios gratuitos de Heroku para el deployment de los microservicios.
 
-Se inicia la investigacion de autenticacion de clientes y se decide que esta sera delegada en el servicio de Firebase. En este punto se reconoce la necesidad de implementar un nuevo microservicio API Gateway que sirva de intermediario entre la comunicacion de los demas microservicios del backend y el frontend, facilitando de este modo cuestiones de autenticacion.
+Se inicia la investigación de autenticación de clientes y se decide delegarla en el servicio de Autenticación de Firebase. En este punto se reconoce la necesidad de implementar un nuevo microservicio API Gateway que sirva de intermediario entre la comunicación de los demas microservicios del backend y el frontend, facilitando de este modo cuestiones de autenticación.
 
-Se crean los repositorios de github independientes para API Gateway y Users Service
+Se crean los repositorios de github independientes para API Gateway y Users Service.
 
 ## 20 de Mayo
 
@@ -156,11 +156,11 @@ El contenido de esta pantalla es muy pobre de momento y quizás ni siquiera se p
 
 ### Backend
 
-Se termina de modelar el microservicio de usuarios, con su respectiva base de datos y una API Rest tipo crud. Ademas se agregan los primeros tests utilizando el framework de Jest y Supertest.
+Se termina de modelar el microservicio de usuarios, con su respectiva base de datos y una API Rest tipo crud. Asimismo se agregan los primeros tests utilizando el framework de Jest y Supertest.
 
-Se consigue la autenticacion con el sdk de Firebase en API Gateway y se la integra a un contenedor de Dockerfile, lo que permite posteriormente completar el camino de CI en el repositorio de Github y obtener el deployment a Heroku.
+Se consigue la autenticación con el sdk de Firebase en API Gateway y se la integra a un contenedor de Dockerfile, lo que permite posteriormente completar el camino de CI en el repositorio de Github y obtener el deployment a Heroku.
 
-Por ultimo se estandarizan ciertas cuestiones de estructura de los microservicios y formato de codigo.
+Por último se estandarizan ciertas cuestiones de estructura de los microservicios y formato de código.
 
 ## 27 de Mayo
 
@@ -198,11 +198,11 @@ El ícono de lápiz, que permite editar la descripción solo aparecerá cuando e
 ### Backend
 
 
-Se dockeriza el servicio de usuarios, se realiza un refactor de este y se establece el deployment a Heroku a traves de Github utilizando CI.
+Se dockeriza el servicio de usuarios, se realiza un refactor del mismo y se establece el deployment a Heroku a traves de Github utilizando CI.
 
 Se mejora el modelado de la arquitectura, se reconoce la necesidad de al menos dos nuevos microservicios, el de proyectos y el de sponsors y veedores. 
 
-Se decide comenzar por el modelado del servicio de proyectos utilizando como template el servicio de usuarios ya creado, lo que permitio obtener una API tipo crud en poco tiempo.
+Se decide comenzar por el modelado del servicio de proyectos utilizando como template el servicio de usuarios ya creado, lo que permitió obtener una API tipo CRUD en poco tiempo.
 
 
 ## 6 de Junio
@@ -228,11 +228,11 @@ La biblioteca de Google Places Autocomplete provee un componente que se ajusta a
  
 ### Backend
 
-El modelado del proyecto fue alterado ya que no cumplia con los requisitos, agregando asi un estado y lugar geografico. La implementacion de un posicionamiento geografico para cada proyecto fue ardua en un principio, ya que fue dificil de implementar tanto en PostgreSQL, como en sequelize y por ultimo Heroku. Se decidio utilizar el tipo de dato GEOMETRY, provisto por la biblioteca postgis de PostgreSQL.
+El modelado del proyecto fué alterado ya que no cumplía con los requisitos, agregando así un estado y lugar geográfico. La implementación de un posicionamiento geográfico para cada proyecto fue ardua en un principio, ya que fué dificil de implementar tanto en PostgreSQL, como en sequelize y por ultimo Heroku. Se decidió utilizar el tipo de dato GEOMETRY, provisto por la biblioteca postgis de PostgreSQL.
 
-Una vez se tuvo la primer version del servicio de proyectos, se integraron tests unitarios y se realizaron las primeras busquedas geograficas sencillas, sin implementar endpoints para estas.
+Una vez se tuvo la primer versión del servicio de proyectos, se integraron tests unitarios y se realizaron las primeras busquedas geográficas sencillas, sin implementar endpoints para estas.
 
-Por ultimo se trabajaron los tests unitarios y documentacion en Swagger tanto en API Gateway como en proyectos.
+Por ultimo se trabajaron los tests unitarios y documentación en Swagger tanto en API Gateway como en proyectos.
 
 
 ## 13 de Junio
@@ -256,13 +256,13 @@ La administración del componente de paginación presentó grandes desafíos que
 
 ### Backend
 
-Con una mejor comprension del modelo de negocio se decidio realizar un refactor al microservicio de proyectos, con el objetivo de incluir imagenes y tags a estos, lo que llevo bastante tiempo de investigacion debido a la necesidad de crear y vincular varias tablas en la base de datos.
+Con una mejor comprensión del modelo de negocio se decidió realizar un refactor al microservicio de proyectos, con el objetivo de incluír imágenes y tags a estos, lo que llevó bastante tiempo de investigación debido a la necesidad de crear y vincular varias tablas en la base de datos.
 
-Se agrego ademas la primera version del endpoint de busquedas de proyectos, permitiendo busquedas geograficas y por tags, con capacidad de paginacion.
+Se agregó además la primera versión del endpoint de búsquedas de proyectos, permitiendo busquedas geograficas y por tags, con capacidad de paginación.
 
-Por otro lado, se avanzo sobre tests de integracion y permisos de usuarios en el microservicio de API Gateway
+Por otro lado, se avanzo sobre tests de integración y permisos de usuarios en el microservicio de API Gateway
 
-Por ultimo se comenzo el modelado del microservicio de sponsors y veedores, utilizando como template los microservicios anteriormente creados.
+Por ultimo se comenzó el modelado del microservicio de sponsors y veedores, utilizando como template los microservicios anteriormente creados.
 
 
 ## 20 de Junio
@@ -282,9 +282,9 @@ Como parte de la refactorización de procesos, se replanteó la jerarquía de pa
 
 Se mejora el microservicio de sponsors, agregando la posibilidad de sponsorear un proyecto e integrandolo a API Gateway.
 
-Se finalizan los endpoints de busqueda en el microservicio de proyectos y se lo integra a API Gateway, actualizando la documentacion de esta ultima.
+Se finalizan los endpoints de busqueda en el microservicio de proyectos y se lo integra a API Gateway, actualizando la documentación de esta ultima.
 
-Ademas se crea el microservicio de payments, el cual brindara soporte a las wallets de los usuarios y una interfaz de comunicacion al smart contract
+Además se crea el microservicio de payments, el cual brindará soporte a las wallets de los usuarios y una interfaz de comunicación al smart contract
 
 ## 27 de Junio
 
@@ -297,11 +297,11 @@ Para reflejar las nuevas características del back-end se actualizó el perfil, 
 
 ### Backend
 
-Se mejora el microservicio de sponsors, agregando soporte a creacion de veedores y revision de proyectos. Se añaden ademas tests unitarios sobre este microservicio.
+Se mejora el microservicio de sponsors, agregando soporte a creación de veedores, revisión de proyectos y test unitarios.
 
-Se conecta a API Gateway con el microservicio de sponsors y se agregan tests de integracion.
+Se conecta a API Gateway con el microservicio de sponsors y se agregan tests de integración.
 
-Se comienza a trabajar sobre el smart contract, lo que permite una comprension completa del modelo de negocio, que trae aparejados cambios en el modelado de proyectos, principalmente en la redefinicion de las categorias, estados y etapas de los proyectos.
+Se comienza a trabajar sobre el smart contract, lo que permite una comprensión completa del modelo de negocio, que trae aparejados cambios en el modelado de proyectos, principalmente en la redefinicion de las categorías, estados y etapas de los proyectos.
 
 ## 8  de Julio
 
@@ -319,7 +319,7 @@ Se solucionan errores y se refactoriza código.  Se pule la interfaz agregando p
 ### Backend
 
 
-Se agrega soporte a voto de veedores en el microservicio de sponsors y se integra esta actualizacion a API Gateway, actualizando su documentacion.
+Se agrega soporte a voto de veedores en el microservicio de sponsors y se la vincula con API Gateway, actualizando su documentacion.
 
 Se crea el microservicio de notificaciones, tomando como tecnologias a python, FastAPI y SQLAlchemy y utilizando como servicio de push notifications a Firebase.
 
@@ -347,9 +347,9 @@ Implementar las notificaciones resultó mucho más complicado de lo esperado, pu
 
 ### Backend
 
-Se avanza sobre el microservicio de payments, se decide deployar el nodo del smart contract en un servidor de AWS ya que los servicios gratuitos de Heroku tienen mal rendimiento.
+Se avanza sobre el microservicio de payments, se decide deployar el nodo del smart contract en un servidor de AWS, ya que los servicios gratuitos de Heroku tienen mal rendimiento.
 
-Se refactoriza el microservicio de notificaciones para brindar soporte a suscripciones a proyectos y se cambia el servicio de push notifications de Firebase por el de Expo
+Se refactoriza el microservicio de notificaciones para brindar soporte a suscripciones a proyectos y se cambia el servicio de push notifications de Firebase por el de Expo.
 
 Se integra el microservicio de notificaciones a la API Gateway y se realizan los primeros testeos manuales.
 
@@ -366,7 +366,7 @@ Se solucionan errores y se pule la interfaz agregando pantallas de carga, mensaj
 
 ### Backend
 
-Se mejora la documentacion de todos los microservicios, se completan tests unitarios y se solucionan errores relacionados a las busquedas de proyectos, paginacion, creacion de wallets y deployment en Heroku.
+Se mejora la documentacion de todos los microservicios, se completan tests unitarios y se solucionan errores relacionados a las búsquedas de proyectos, paginación, creación de wallets y deployment en Heroku.
 
 {% endcapture %} {% assign text = markdown | markdownify %}
 
