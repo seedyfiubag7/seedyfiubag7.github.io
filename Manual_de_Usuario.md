@@ -1,9 +1,10 @@
 # Manual de Usuario
 
 
+## Índice
 
 {% capture markdown %}
-## Índice
+
 
 ## Introducción
 

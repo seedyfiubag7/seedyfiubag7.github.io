@@ -16,15 +16,15 @@ Si es la primera vez que utiliza el servicio de Backoffice o busca crearse una n
 
 * En la página inicial, seleccione 'Registrarse'.
 
-<center><img src="img/**PNG" width="950"/></center>
+<center><img src="img/1.1.PNG" width="950"/></center>
 
 * Complete las credenciales con un mail válido, y una contraseña de al menos 6 caracteres. Una vez completado, presione 'REGISTRARSE'.
 
-<center><img src="img/*PNG" width="950"/></center>
+<center><img src="img/2.PNG" width="950"/></center>
 
 * Complete el apartado de nombre y apellido, y seleccione su fecha de nacimiento haciendo click en el calendario a la derecha del campo. Al finalizar, presione 'REGISTRARSE'.
 
-<center><img src="img/*PNG" width="950"/></center>
+<center><img src="img/3.PNG" width="950"/></center>
 
 * Una vez finalizado el registro, se lo llevará a la pantalla principal del Backoffice, donde le aparecerá un mensaje de error hasta que se le otorgue el poder de administrador. Dicho poder debe ser solicitado a un administrador del sistema.
 
@@ -32,17 +32,17 @@ Si es la primera vez que utiliza el servicio de Backoffice o busca crearse una n
 
 * En la página principal, ingrese las credenciales de la cuenta anteriormente creada y seleccione 'INGRESAR'.
 
-<center><img src="img/*PNG" width="950"/></center>
+<center><img src="img/1.PNG" width="950"/></center>
 
 ### Recupero de Contraseña
 
 * En la página inicial, seleccione 'Recuperar contraseña'.
 
-<center><img src="img/**PNG" width="950"/></center>
+<center><img src="img/1.2.PNG" width="950"/></center>
 
 * Ingrese el mail asociado a su cuenta y presione 'ENVIAR MAIL'. Le aparecerá un mensaje cuando se envíe el mail. A continuación, vaya a la casilla de correos de su mail y siga las instrucciones.
 
-<center><img src="img/*PNG" width="950"/></center>
+<center><img src="img/9.PNG" width="950"/></center>
 
 ## Administración de Usuarios
 
@@ -52,25 +52,25 @@ En la sección de Usuarios se podrán listar todos los usuarios del sistema, rev
 
 * Al ingresar a la sección de Usuarios, se listarán una cantidad predeterminada de usuarios.
 
-<center><img src="img/*PNG" width="950"/></center>
+<center><img src="img/4.PNG" width="950"/></center>
 
 * Para ver más usuarios, vaya hacia abajo en la página y presione el botón para avanzar o para retroceder (éstas aparecerán en gris y deshabilitadas en caso de que no haya más usuarios que mostrar).
 
-<center><img src="img/**PNG" width="950"/></center>
+<center><img src="img/4.1.PNG" width="950"/></center>
 
 ### Información de un Usuario y Promoción a Administrador
 
 * Para acceder a la información de un usuario, haga click en los '...' del usuario que busca.
 
-<center><img src="img/**PNG" width="950"/></center>
+<center><img src="img/4.2.PNG" width="950"/></center>
 
 * Se lo redirigirá a una pantalla donde podrá ver toda la información del usuario seleccionado
 
-<center><img src="img/*PNG" width="950"/></center>
+<center><img src="img/5.PNG" width="950"/></center>
 
 * En caso de querer promocionar un usuario a administrador, se debe presionar sobre 'HACER ADMIN'.
 
-<center><img src="img/**PNG" width="950"/></center>
+<center><img src="img/5.1.PNG" width="950"/></center>
 
 ## Administración de Proyectos
 
@@ -87,17 +87,17 @@ En la sección de Proyectos se podrán listar todos los proyectos del sistema, f
    - Categoría. Categoría del proyecto, se puede seleccionar únicamente una o ninguna.
    - Etapa. Etapa del proyecto, se puede seleccionar únicamente una o ninguna.
 
-<center><img src="img/*PNG" width="950"/></center>
+<center><img src="img/10.PNG" width="950"/></center>
 
 * Para ver más proyectos, vaya hacia abajo en la página y presione el botón para avanzar o para retroceder (éstas aparecerán en gris y deshabilitadas en caso de que no haya más usuarios que mostrar).
 
-<center><img src="img/1*PNG" width="950"/></center>
+<center><img src="img/13.PNG" width="950"/></center>
 
 ### Información de un Proyecto
 
 * Para ingresar a un proyecto, presione sobre la tarjeta correspondiente. Será redirigido y podrá ver la información detallada del proyecto.
 
-<center><img src="img/1*PNG" width="950"/></center>
+<center><img src="img/11.PNG" width="950"/></center>
 
 ## Métricas de Usuarios y Proyectos
 
@@ -109,13 +109,14 @@ En esta sección se encontrará con la información de las siguientes métricas:
 * Cantidad de proyectos por categoría
 * Cantidad de usuarios total vs usuarios veedores vs usuarios admins.
 
-<center><img src="img/*PNG" width="950"/></center>
+<center><img src="img/7.PNG" width="950"/></center>
 
-<center><img src="img/*PNG" width="950"/></center>
+<center><img src="img/8.PNG" width="950"/></center>
+
+
+{% endcapture %} {% assign text = markdown | markdownify %}
 
 {% include toc.html html=text ordered=true %}
 {{ text }}
-
-
 
 
