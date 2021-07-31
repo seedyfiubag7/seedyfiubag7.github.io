@@ -5,7 +5,7 @@
 
 ## Índice
 
-{% include toc.html html=Manual_de_Usuario.html %}
+{% include toc.html html=Manual_de_Usuario %}
 
 ## Introducción
 
