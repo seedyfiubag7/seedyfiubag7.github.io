@@ -1,1 +1,10 @@
 theme: jekyll-theme-cayman
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - Manual_de_Usuario.md.md
+  - Manual_de_Usuario_Backoffice.md.md
+  - Index.md
