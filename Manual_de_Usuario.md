@@ -5,7 +5,7 @@
 
 ## Índice
 
-{% include toc.html html=content sanitize=true h_min=0 h_max=100 %}
+{% include toc.html html=content %}
 
 ## Introducción
 
