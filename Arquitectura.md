@@ -7,7 +7,7 @@ Este manual busca proporcionar informacion tecnica sobre la arquitectura de la a
 
 ## Backend
 
-El backend cuenta con 6 servicios y un nodo de smart contract que le permiten desempeñar sus funcionalidades. A excepcion del servicio de notificaciones y del smart contract, todos fueron construidos utilizando las mismas tecnologias: Javascript como lenguaje, NodeJS y Express como motor de ejecucion y framework de construccion de la API Rest, PostgreSQL y Sequelize como motor y administrador de base de datos y Jest para la realizacion de tests. El servicio de notificaciones fue implementado utilizando Python como lenguaje, FastAPI como framework de API Rest, SQLAlchemy y PostgreSQL como motor y administrador de base de datos. Por ultimo, el nodo de smart contract fue implementado utilizando ... COMPLETAR
+El backend cuenta con 6 servicios y un nodo de smart contract que le permiten desempeñar sus funcionalidades. A excepcion del servicio de notificaciones y del smart contract, todos fueron construidos utilizando las mismas tecnologias: Javascript como lenguaje, NodeJS y Express como motor de ejecucion y framework de construccion de la API Rest, PostgreSQL y Sequelize como motor y administrador de base de datos y Jest para la realizacion de tests. El servicio de notificaciones fue implementado utilizando Python como lenguaje, FastAPI como framework de API Rest, SQLAlchemy y PostgreSQL como motor y administrador de base de datos. Por ultimo, el smart contract fue implementado utilizando una base provista por la catedra hecha en Solidity, y probada y testeada sobre  un nodo local de Hardhat.
 
 
 ### API Gateway
