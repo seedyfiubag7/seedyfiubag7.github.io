@@ -113,6 +113,13 @@ En esta sección se encontrará con la información de las siguientes métricas:
 
 <center><img src="img/8.PNG" width="950"/></center>
 
+## Administración de Servidores
+
+El listado de servidores y la visualización de su estado se delgaron en el servicio de recolección de datos de Datadog, pueden accederse al mismo
+con las siguientes credenciales:
+
+Mail: jventura@fi.uba.ar
+Contraseña: SeedyFiuba2021
 
 {% endcapture %} {% assign text = markdown | markdownify %}
 
