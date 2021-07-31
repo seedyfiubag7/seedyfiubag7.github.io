@@ -119,7 +119,10 @@ El listado de servidores y la visualización de su estado se delgaron en el serv
 con las siguientes credenciales:
 
 Mail: jventura@fi.uba.ar
+
 Contraseña: SeedyFiuba2021
+
+Al ingresar a DataDog es importante elegir la organizacion "SeedyFiuba" desde los ajustes de usuario. Por default DataDog elegirá "Old Organization (do not use)", lo que puede implicar la aparicion de un mensaje de vencimiento de trial de la cuenta.
 
 {% endcapture %} {% assign text = markdown | markdownify %}
 
