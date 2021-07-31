@@ -8,3 +8,6 @@ include:
   - Manual_de_Usuario.md
   - Manual_de_Usuario_Backoffice.md
   - index.md
+  - Bitacora.md
+  - Arquitectura.md
+  - Postmortem.md
