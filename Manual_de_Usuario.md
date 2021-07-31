@@ -2,10 +2,8 @@
 
 
 
-
+{% capture markdown %}
 ## Índice
-
-{% include toc.html html=Manual_de_Usuario %}
 
 ## Introducción
 
@@ -326,3 +324,7 @@ Si lo desea puede recibir notificaciones sobre los avances de un proyecto.
 3. Puede volver a seleccionar la campañita para dejar de recibir notificaciones.
 
 Cuando se crea un proyecto, el dueño se suscribe automáticamente al proyecto, pero puede abandonar el servicio de notificaciones siguiendo los pasos expuestos previamente.
+
+{% endcapture %} {% assign text = markdown | markdownify %}
+
+{% include toc.html html=text ordered=true %}
